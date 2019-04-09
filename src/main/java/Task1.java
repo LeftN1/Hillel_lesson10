@@ -42,6 +42,9 @@ public class Task1 {
         System.out.println("Bloch's:\t" + jArr);
         System.out.println(mArr.getLength());
         System.out.println(jArr.size());
+
+        System.out.println(mArr.get(2));
+        System.out.println(jArr.get(2));
     }
 
 }

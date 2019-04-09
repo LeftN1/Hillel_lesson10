@@ -53,12 +53,22 @@ public class MyArrayList {
         if(pos > length - 1){
             throw new IndexOutOfBoundsException();
         }
-        else if (pos == length -1){
+        else if (pos == length - 1){
             remove();
         }
         else{
             innerArray[pos] = innerArray[pos+1];
             remove(pos + 1);
+        }
+    }
+
+    public Object get(int pos){
+        if(pos >= length){
+            throw new IndexOutOfBoundsException();
+        }
+        else
+        {
+            return innerArray[pos];
         }
     }
 
